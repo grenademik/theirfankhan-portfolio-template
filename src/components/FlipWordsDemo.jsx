@@ -8,7 +8,7 @@ export function FlipWordsDemo() {
     <div className="">
       <div className="text-4xl md:text-7xl flex flex-col  mx-auto text-neutral-300 dark:text-neutral-400">
         <div>
-          <span className="font-bold text-white leading-none z-30">Hi, I'm Irfan.
+          <span className="font-bold text-white leading-none z-30">Hi, I&apos;m Irfan.
           </span>
         </div>
 
@@ -34,7 +34,7 @@ export function FlipWordsDemo() {
 
         <div>
           <span className="text-lg bg-white p-2 md:p-4 text-black border-2 border-white"> Got a project?</span>
-          <button className="border p-2 md:p-4 text-lg">Let's talk</button>
+          <button className="border p-2 md:p-4 text-lg">Let&apos;s talk</button>
         </div>
 
 

@@ -124,7 +124,7 @@ const Skills = () => {
                 </div>
                 <div className="col-span-8 justify-between flex flex-col gap-y-10 text-white">
                 <span className="text-xl font-semibold ">
-                    With years of graphic design experience, I've transitioned into frontend development over the past year. I hold a bachelor's in Computer Science and Information Technology, blending design skills with coding expertise to create dynamic user experiences. I'm eager for new challenges and projects.
+                    With years of graphic design experience, I&apos;ve transitioned into frontend development over the past year. I hold a bachelor&apos;s in Computer Science and Information Technology, blending design skills with coding expertise to create dynamic user experiences. I&apos;m eager for new challenges and projects.
                 </span>
                     <div className="grid grid-cols-6">
                         <div className="col-span-2 flex flex-col text-lg font-thin">

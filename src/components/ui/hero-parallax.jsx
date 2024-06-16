@@ -96,7 +96,7 @@ export const Header = () => {
                 Here are some of my <br />works
             </h1>
             <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-                Here, you'll find a collection of my work that blends creative design with technical development. From dynamic interfaces to sleek, responsive layouts, explore projects that highlight my skills in graphic design and frontend development. Each project demonstrates my commitment to delivering visually appealing and highly functional web experiences.
+                Here, you&apos;ll find a collection of my work that blends creative design with technical development. From dynamic interfaces to sleek, responsive layouts, explore projects that highlight my skills in graphic design and frontend development. Each project demonstrates my commitment to delivering visually appealing and highly functional web experiences.
             </p>
         </div>
     )
