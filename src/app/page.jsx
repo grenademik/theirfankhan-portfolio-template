@@ -8,6 +8,7 @@ import MouseHover from "../components/MouseHover";
 import Skills from "../components/Skills";
 import { Portfolio } from "../components/Portfolio";
 import { HeroParallaxDemo } from "../components/HeroParallaxDemo";
+import { BentoGridDemo } from "../components/BewtoGridDemo";
 
 export default async function Home() {
   const testimonials = await getTestimonials();
@@ -36,7 +37,10 @@ export default async function Home() {
         <Skills />
       </div>
       <div className="">
-          <HeroParallaxDemo />
+        <HeroParallaxDemo />
+      </div>
+      <div className="my-20">
+        <BentoGridDemo />
       </div>
     </>
   );

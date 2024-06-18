@@ -37,4 +37,39 @@ export const products = [
     thumbnail:
       `${sailungHome.src}`,
   },
+  {
+    title: "Ram Bhakta Jojiju",
+    link: "https://rambhaktajojiju.com/",
+    techStack: ["ReactJS", "Framer Motion", "Tailwind CSS"],
+
+    thumbnail:
+      `${ramBhaktaHome.src}`,
+  },
+  {
+    title: "Himalayan Trail Running",
+    link: "https://www.himalayantrailrunning.com",
+    type: "Development",
+    thumbnail:
+      `${himalayanHome.src}`,
+  },
+  {
+    title: "Freedom Adventures",
+    link: "https://freedomadventuretreks.com",
+    thumbnail:
+      `${freedomHome.src}`,
+  },
+  {
+    title: "Sailung Ultra",
+    link: "https://sailungultra.com/",
+    thumbnail:
+      `${sailungHome.src}`,
+  },
+  {
+    title: "Ram Bhakta Jojiju",
+    link: "https://rambhaktajojiju.com/",
+    techStack: ["ReactJS", "Framer Motion", "Tailwind CSS"],
+
+    thumbnail:
+      `${ramBhaktaHome.src}`,
+  },
 ];
