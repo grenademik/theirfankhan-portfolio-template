@@ -13,7 +13,21 @@ const nextConfig = {
                 hostname: "aceternity.com",
                 port: "",
                 pathname: "/**",
-            },]
+            },
+            {
+                protocol: "https",
+                hostname: "plus.unsplash.com",
+                port: "",
+                pathname: "/**",
+            },
+            {
+                protocol: "https",
+                hostname: "himalayancreatives.com",
+                port: "",
+                pathname: "/**",
+            },
+        
+        ]
     }
 };
 

@@ -1,16 +1,15 @@
 
 import React from "react";
 import {
-    IconArrowWaveRightUp,
-    IconBoxAlignRightFilled,
-    IconBoxAlignTopLeft,
-    IconClipboardCopy,
-    IconFileBroken,
-    IconSignature,
-    IconTableColumn,
+    IconCode,
+    IconToolsOff,
+    IconChartDots,
+    IconTrekking,
+    IconCircleCheckFilled,
 } from "@tabler/icons-react";
 import { cn } from "../utils/cn";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
+import DesignLogo from "../images/design-svgrepo-com.svg"
 
 export function BentoGridDemo() {
     return (
@@ -25,6 +24,7 @@ export function BentoGridDemo() {
                     className={item.className}
                     image={item.image}
                     animate={item.animate}
+                    button={item.button}
                 />
             ))}
         </BentoGrid>
@@ -41,16 +41,16 @@ const items = [
         description: "Building dynamic, user-friendly web interfaces.",
         header: <Skeleton />,
         image: "https://plus.unsplash.com/premium_photo-1674539249731-62b047824f06?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+        icon: <IconCode className="h-10 w-10 text-neutral-500" />,
         className: "",
-        animate: true,
+        // animate: true,
     },
     {
         title: "Brand Identity Design",
         description: "Crafting cohesive and impactful brand identities.",
         header: <Skeleton />,
-        image: "https://plus.unsplash.com/premium_photo-1674539249731-62b047824f06?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+        image: {DesignLogo},
+        icon: <IconToolsOff className="h-10 w-10 text-neutral-500" />,
         className: "",
     },
     {
@@ -58,7 +58,7 @@ const items = [
         description: "Creating strategies for effective online engagement.",
         header: <Skeleton />,
         image: "https://plus.unsplash.com/premium_photo-1674539249731-62b047824f06?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+        icon: <IconChartDots className="h-10 w-10 text-neutral-500" />,
         className: "",
     },
     {
@@ -66,16 +66,15 @@ const items = [
         description: "Delivering specialized solutions for tourism and trail running industries.",
         header: <Skeleton />,
         image: "https://plus.unsplash.com/premium_photo-1674539249731-62b047824f06?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+        icon: <IconTrekking className="h-10 w-10 text-neutral-500" />,
         className: "col-span-2",
     },
     {
         title: "Wanna start a project together?",
-        description: "Creating visually stunning and effective designs.",
+        // description: "Creating visually stunning and effective designs.",
         header: <Skeleton />,
         image: "https://plus.unsplash.com/premium_photo-1674539249731-62b047824f06?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
         className: "",
+        button: "Copy my email"
     }
-
 ];

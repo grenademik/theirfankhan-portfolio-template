@@ -2,7 +2,7 @@ import React from "react";
 import { FlipWords } from "../components/ui/flip-words";
 
 export function FlipWordsDemo() {
-  const words = ["Designer", "Photographer"];
+  const words = ["Designer", "Marketer"];
 
   return (
     <div className="">
@@ -29,12 +29,13 @@ export function FlipWordsDemo() {
         </div>
 
         <div className="text-lg my-6 md:my-0 md:mt-6">
-          <span >Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
+          <span >Innovating and transforming ideas into digital experiences. </span>
         </div>
 
         <div>
           <span className="text-lg bg-white p-2 md:p-4 text-black border-2 border-white"> Got a project?</span>
-          <button className="border p-2 md:p-4 text-lg">Let&apos;s talk</button>
+
+          <a href="mailto:contact@theirfankhan.com" className="border border-2 border-white hover:bg-white hover:text-black duration-300 ease-in p-2 md:p-4 text-lg">Let&apos;s talk</a>
         </div>
 
 

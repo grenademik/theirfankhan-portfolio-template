@@ -53,10 +53,12 @@ export const products = [
       `${himalayanHome.src}`,
   },
   {
-    title: "Freedom Adventures",
-    link: "https://freedomadventuretreks.com",
+    title: "Ram Bhakta Jojiju",
+    link: "https://rambhaktajojiju.com/",
+    techStack: ["ReactJS", "Framer Motion", "Tailwind CSS"],
+
     thumbnail:
-      `${freedomHome.src}`,
+      `${ramBhaktaHome.src}`,
   },
   {
     title: "Sailung Ultra",
@@ -65,11 +67,9 @@ export const products = [
       `${sailungHome.src}`,
   },
   {
-    title: "Ram Bhakta Jojiju",
-    link: "https://rambhaktajojiju.com/",
-    techStack: ["ReactJS", "Framer Motion", "Tailwind CSS"],
-
+    title: "ElevProf",
+    link: "https://elevprof.vercel.app",
     thumbnail:
-      `${ramBhaktaHome.src}`,
+      `https://himalayancreatives.com/wp-content/uploads/2024/07/Screenshot_11-7-2024_184839_elevprof.vercel.app_.jpeg`,
   },
 ];

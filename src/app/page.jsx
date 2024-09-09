@@ -21,11 +21,11 @@ export default async function Home() {
             <FlipWordsDemo />
           </div>
           <div className="absolute right-0 mt-20">
-            {/* <Image
+            <Image
               src={irfanDesigner}
               alt="Irfan"
               className=" h-screen w-full self-end"
-            /> */}
+            />
             {/* <MouseHover /> */}
           </div>
         </div>
