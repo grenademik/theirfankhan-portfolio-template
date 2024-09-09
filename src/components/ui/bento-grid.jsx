@@ -59,14 +59,6 @@ export const BentoGridItem = ({
     // style={{ backgroundImage: `url(${image})` }}
     >
 
-      {
-        animate &&
-        <div className="my-[-30px]">
-          <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-
-          <iframe src="https://lottie.host/embed/26f749bb-df44-4c8c-a00f-cdcde52b2cb6/2sc2oT6Smy.json"></iframe>
-        </div>
-      }
       {/* <Image src={image} width={40} height={40}/> */}
       <div className="group-hover/bento:translate-x-2 transition duration-200">
 

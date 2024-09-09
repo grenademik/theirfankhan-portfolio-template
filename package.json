@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next build & next export",
     "start": "next start",
     "lint": "next lint"
   },
@@ -19,6 +20,7 @@
     "react-dom": "^18",
     "react-lottie": "^1.2.4",
     "sass": "^1.77.5",
+    "sharp": "^0.33.5",
     "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
