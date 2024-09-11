@@ -4,7 +4,6 @@ import Image from "next/image";
 import MagicButton from "./MagicButton";
 import { useState } from "react";
 import animationData from "../../data/confetti.json"
-import Lottie from "react-lottie";
 import {
   IconClipboardCopy,
 } from "@tabler/icons-react";
@@ -75,12 +74,6 @@ export const BentoGridItem = ({
             {/* add rounded-md h-8 md:h-8, remove rounded-full */}
             {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
             {/* add handleCopy() for the copy the text */}
-            <div
-              className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-                }`}
-            >
-              <Lottie options={defaultOptions} height={150} width={300} />
-            </div>
             <MagicButton
               title={copied ? "Email is Copied!" : "Copy my email address"}
               icon={<IconClipboardCopy />}

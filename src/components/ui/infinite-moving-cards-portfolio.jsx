@@ -84,7 +84,7 @@ export const InfiniteMovingCardsPortfolio = ({
           >
             <div className="relative z-20 hover:scale-110 cursor-pointer duration-300 ease-in flex flex-row items-center px-10">
               <div className="h-96 z-0">
-                <Image src={item.image} fill="false" className="rounded-lg"/>
+                <Image src={item.image} fill="false" className="rounded-lg" alt="Image"/>
               </div>
               <span className="uppercase hover:text-red-400 z-10 bottom-0 tracking-widest font-bold text-lg leading-[1.6]  text-white ">
                 {item.title}
