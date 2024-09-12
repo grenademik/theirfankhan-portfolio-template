@@ -16,7 +16,6 @@ export default async function Home() {
     <>
       <div className="container mx-auto">
         <div className="flex items-center justify-center mx-20 relative h-screen">
-
           <div className="absolute mt-20 left-0">
             <FlipWordsDemo />
           </div>
@@ -24,7 +23,7 @@ export default async function Home() {
             <Image
               src={irfanDesigner}
               alt="Irfan"
-              className=" h-screen w-full self-end"
+              className="hidden lg:block md:h-screen w-full self-end"
             />
             {/* <MouseHover /> */}
           </div>
@@ -39,7 +38,7 @@ export default async function Home() {
       <div className="">
         <HeroParallaxDemo />
       </div>
-      <div className="my-20">
+      <div className="mx-10 my-10">
         <BentoGridDemo />
       </div>
     </>

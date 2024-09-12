@@ -42,8 +42,7 @@ const items = [
         header: <Skeleton />,
         image: "https://plus.unsplash.com/premium_photo-1674539249731-62b047824f06?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         icon: <IconCode className="h-10 w-10 text-neutral-500" />,
-        className: "",
-        // animate: true,
+        className: "col-span-2 md:col-span-1",
     },
     {
         title: "Brand Identity Design",
@@ -51,7 +50,7 @@ const items = [
         header: <Skeleton />,
         image: {DesignLogo},
         icon: <IconToolsOff className="h-10 w-10 text-neutral-500" />,
-        className: "",
+        className: "col-span-2 md:col-span-1",
     },
     {
         title: "Social Media Marketing",
@@ -59,7 +58,7 @@ const items = [
         header: <Skeleton />,
         image: "https://plus.unsplash.com/premium_photo-1674539249731-62b047824f06?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         icon: <IconChartDots className="h-10 w-10 text-neutral-500" />,
-        className: "",
+        className: "col-span-2 md:col-span-1",
     },
     {
         title: "Expertise in Tourism and Trail Running Projects",
@@ -74,7 +73,8 @@ const items = [
         // description: "Creating visually stunning and effective designs.",
         header: <Skeleton />,
         image: "https://plus.unsplash.com/premium_photo-1674539249731-62b047824f06?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        className: "",
+        className: "col-span-2 md:col-span-1",
         button: "Copy my email"
+        
     }
 ];
