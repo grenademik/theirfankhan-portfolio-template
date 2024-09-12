@@ -15,7 +15,7 @@ export default async function Home() {
   return (
     <>
       <div className="container mx-auto">
-        <div className="flex items-center justify-center mx-20 relative h-screen">
+        <div className="flex items-center justify-center mx-10 md:mx-20 relative h-screen">
           <div className="absolute mt-20 left-0">
             <FlipWordsDemo />
           </div>

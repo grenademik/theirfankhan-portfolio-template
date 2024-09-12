@@ -127,8 +127,8 @@ const Skills = () => {
                     With years of graphic design experience, I&apos;ve transitioned into frontend development over the past year. I hold a bachelor&apos;s in Computer Science and Information Technology, blending design skills with coding expertise to create dynamic user experiences. I&apos;m eager for new challenges and projects.
                 </span>
                     <div className="grid grid-cols-6">
-                        <div className="col-span-2 flex flex-col text-lg font-thin">
-                            <span>
+                        <div className="col-span-2 flex flex-col  font-thin">
+                            <span className='text-sm font-semibold'>
                                 Development
                             </span>
                             <span className="uppercase text-red-600 text-sm font-bold">2+ years</span>
@@ -141,7 +141,7 @@ const Skills = () => {
                     </div>
                     <div className="grid grid-cols-6">
                         <div className="col-span-2 flex flex-col text-lg font-thin">
-                            <span >
+                            <span className='text-sm font-semibold'>
                                 Design
                             </span>
                             <span className="uppercase text-red-600 text-sm font-bold">8+ years</span>
@@ -155,7 +155,7 @@ const Skills = () => {
                     <div className="grid grid-cols-6">
                         <div className="col-span-2 flex flex-col text-lg font-thin">
                             <div className='flex flex-col'>
-                                <span >
+                                <span className='text-sm font-semibold'>
                                     Other Skills
                                 </span>
                                 <span className='text-xs'>Have at least one commercial project using these skills</span>

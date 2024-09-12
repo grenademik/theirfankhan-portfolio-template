@@ -44,7 +44,7 @@ export const HeroParallax = ({ products }) => {
     return (
         <div
             ref={ref}
-            className="h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+            className="md:h-[300vh] pb-10 md:py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
         >
             <Header />
             <motion.div
@@ -57,7 +57,7 @@ export const HeroParallax = ({ products }) => {
                 className=""
             >
                 <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
-                    <span>Development</span>
+
                     {firstRow.map(product => (
                         <ProductCard
                             product={product}
@@ -112,10 +112,11 @@ export const ProductCard = ({ product, translate }) => {
                 y: -20
             }}
             key={product.title}
-            className="group/product flex flex-col h-96 w-[30rem] relative flex-shrink-0"
+            className="group/product flex flex-col h-48 w-48 md:h-96 md:w-[30rem] relative flex-shrink-0"
         >
             <Link
                 href={product.link}
+                target=""
                 className="block group-hover/product:shadow-2xl "
             >
                 <Image
