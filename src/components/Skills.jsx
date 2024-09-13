@@ -76,7 +76,7 @@ const Skills = () => {
                                 </div>
                             </div>
                             <div className='flex flex-row gap-2 items-start'>
-                                <Image src={himalayantrailrunning} alt="" width={15}  className='invert contrast-0 brightness-100 mt-1'/>
+                                <Image src={himalayantrailrunning} alt="" width={15} className='invert contrast-0 brightness-100 mt-1' />
                                 <div className='flex flex-col '>
                                     <span className='col-span-3 text-xs font-thin'>Himalayan Trail Running</span>
                                     <span className='col-span-2 text-xs'>Brand Designer, Marketing & Event Manager</span>
@@ -104,28 +104,44 @@ const Skills = () => {
                         <div className='flex flex-col'>
                             <div className='flex flex-row gap-2 items-center'>
                                 <Image src={microsoft} alt="" width={15} />
-                                <span className='text-xs'>  MTA: Networking Fundamentals - Certified 2018</span>
+                                <span className='text-xs'>
+                                    <a href="https://www.credly.com/badges/fcb5a1b9-f078-473c-a5fd-47cd520b05db/linked_in_profile" target='_blank'>
+                                        MTA: Networking Fundamentals - Certified 2018
+                                    </a>
+                                </span>
                             </div>
                             <div className='flex flex-row gap-2 items-center'>
                                 <Image src={microsoft} alt="" width={15} />
-                                <span className='text-xs'>Microsoft Office Specialist Excel 2013</span>
+                                <span className='text-xs'>
+                                    <a href="https://www.credly.com/badges/16e34a9c-ce00-4850-9673-204f485892ad/linked_i" target='_blank'>
+                                        Microsoft Office Specialist Excel 2013
+                                    </a>
+                                </span>
                             </div>
                             <div className='flex flex-row gap-2 items-center'>
                                 <Image src={microsoft} alt="" width={15} />
-                                <span className='text-xs'>Microsoft Office Specialist Word 2013</span>
+                                <span className='text-xs'>
+                                    <a href="https://www.credly.com/badges/2611ec02-eca4-4211-a9f6-b430219f050c/linked_in_profile" target='_blank'>
+                                        Microsoft Office Specialist Word 2013
+                                    </a>
+                                </span>
                             </div>
                             <div className='flex flex-row gap-2 items-center'>
                                 <Image src={microsoft} alt="" width={15} />
-                                <span className='text-xs'>Microsoft Student Partner 2018</span>
+                                <span className='text-xs'>
+
+                                    Microsoft Student Partner 2018
+
+                                </span>
                             </div>
                         </div>
                     </div>
 
                 </div>
                 <div className="col-span-8 justify-between flex flex-col gap-y-10 text-white">
-                <span className="text-xl font-semibold ">
-                    With years of graphic design experience, I&apos;ve transitioned into frontend development over the past year. I hold a bachelor&apos;s in Computer Science and Information Technology, blending design skills with coding expertise to create dynamic user experiences. I&apos;m eager for new challenges and projects.
-                </span>
+                    <span className="text-xl font-semibold ">
+                        With years of graphic design experience, I&apos;ve transitioned into frontend development over the past year. I hold a bachelor&apos;s in Computer Science and Information Technology, blending design skills with coding expertise to create dynamic user experiences. I&apos;m eager for new challenges and projects.
+                    </span>
                     <div className="grid grid-cols-6">
                         <div className="col-span-2 flex flex-col  font-thin">
                             <span className='text-sm font-semibold'>
