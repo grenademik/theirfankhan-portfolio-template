@@ -13,7 +13,7 @@ import DesignLogo from "../images/design-svgrepo-com.svg"
 
 export function BentoGridDemo() {
     return (
-        <BentoGrid className="max-w-4xl mx-auto">
+        <BentoGrid className="max-w-5xl mx-auto">
             {items.map((item, i) => (
                 <BentoGridItem
                     key={i}

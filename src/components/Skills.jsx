@@ -43,7 +43,7 @@ const Skills = () => {
     ];
 
     return (
-        <div className="mx-10 md:mx-40 bg-black">
+        <div className="mx-10 md:mx-32 bg-black">
 
             <div className="grid grid-cols-1 md:grid-cols-12 md:space-x-20 mb-20">
                 <div className="md:col-span-4 flex flex-col justify-between gap-4 mb-20 md:mb-0 text-white">
