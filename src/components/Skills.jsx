@@ -44,7 +44,6 @@ const Skills = () => {
 
     return (
         <div className="mx-10 md:mx-32 bg-black">
-
             <div className="grid grid-cols-1 md:grid-cols-12 md:space-x-20 mb-20">
                 <div className="md:col-span-4 flex flex-col justify-between gap-4 mb-20 md:mb-0 text-white">
                     <div className='flex flex-col'>
@@ -70,29 +69,40 @@ const Skills = () => {
                         <div className='flex flex-col gap-2'>
                             <div className='flex flex-row gap-2 items-start'>
                                 <Image src={himalayancreatives} alt="" width={15} className='mt-1' />
-                                <div className='flex flex-col '>
-                                    <span className='col-span-3 text-xs font-thin'>Himalayan Creative Solution</span>
+                                <div className='flex flex-col w-full'>
+                                    <div className='flex flex-row justify-between w-full'>
+                                        <span className='col-span-3 text-xs font-thin'>Himalayan Creative Solution</span>
+                                        <span className='text-xs font-light px-4'>2021-Present</span>
+                                    </div>
                                     <span className='col-span-2 text-xs'>Frontend Engineer/Product Designer</span>
                                 </div>
                             </div>
                             <div className='flex flex-row gap-2 items-start'>
                                 <Image src={himalayantrailrunning} alt="" width={15} className='invert contrast-0 brightness-100 mt-1' />
-                                <div className='flex flex-col '>
-                                    <span className='col-span-3 text-xs font-thin'>Himalayan Trail Running</span>
+                                <div className='flex flex-col w-full'>
+                                    <div className='flex flex-row justify-between w-full'>
+                                        <span className='col-span-3 text-xs font-thin'>Himalayan Trail Running</span>
+                                        <span className='text-xs font-light px-4'>2019-2021</span>
+                                    </div>
                                     <span className='col-span-2 text-xs'>Brand Designer, Marketing & Event Manager</span>
                                 </div>
                             </div>
                             <div className='flex flex-row gap-2 items-start'>
                                 <Image src={vonKathmandu} alt="" width={15} className='mt-1' />
-                                <div className='flex flex-col '>
-                                    <span className='col-span-3 text-xs font-thin'>vonKathmandu</span>
+                                <div className='flex flex-col w-full'>
+                                    <div className='flex flex-row justify-between w-full'>
+                                        <span className='col-span-3 text-xs font-thin'>vonKathmandu</span>
+                                        <span className='text-xs font-light px-4'>2018-2019</span>
+                                    </div>
                                     <span className='col-span-2 text-xs'>Graphics and Marketing</span>
                                 </div>
                             </div>
                             <div className='flex flex-row gap-2 items-start'>
                                 <Image src={freedomadventures} alt="" width={15} />
-                                <div className='flex flex-col '>
-                                    <span className='col-span-3 text-xs font-thin'>Freedom Adventures</span>
+                                <div className='flex flex-col w-full'>
+                                    <div className='flex flex-row justify-between w-full'>
+                                        <span className='col-span-3 text-xs font-thin'>Freedom Adventures</span> <span className='text-xs font-light px-4'>2016-2018</span>
+                                    </div>
                                     <span className='col-span-2 text-xs'>Head IT, Design & Marketing Manager</span>
                                 </div>
                             </div>
