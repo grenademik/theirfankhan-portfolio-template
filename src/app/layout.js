@@ -1,6 +1,7 @@
 import { Poppins } from 'next/font/google';
 import "./globals.css";
 import { FloatingNavDemo } from "../components/FloatingNavDemo";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
         {/* <FloatingNavDemo/> */}
         {children}
         </body>
+        <GoogleAnalytics gaId="G-K380SC2EZB" />
     </html>
   );
 }
