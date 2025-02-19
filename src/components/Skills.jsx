@@ -114,7 +114,7 @@ const Skills = () => {
                         <div className='flex flex-col'>
                             <div className='flex flex-row gap-2 items-center'>
                                 <Image src={microsoft} alt="" width={15} />
-                                <span className='text-xs'>
+                                <span className='text-xs hover:text-red-500 transition-colors duration-300'>
                                     <a href="https://www.credly.com/badges/fcb5a1b9-f078-473c-a5fd-47cd520b05db/linked_in_profile" target='_blank'>
                                         MTA: Networking Fundamentals - Certified 2018
                                     </a>
@@ -122,7 +122,7 @@ const Skills = () => {
                             </div>
                             <div className='flex flex-row gap-2 items-center'>
                                 <Image src={microsoft} alt="" width={15} />
-                                <span className='text-xs'>
+                                <span className='text-xs hover:text-red-500 transition-colors duration-300'>
                                     <a href="https://www.credly.com/badges/16e34a9c-ce00-4850-9673-204f485892ad/linked_i" target='_blank'>
                                         Microsoft Office Specialist Excel 2013
                                     </a>
@@ -130,7 +130,7 @@ const Skills = () => {
                             </div>
                             <div className='flex flex-row gap-2 items-center'>
                                 <Image src={microsoft} alt="" width={15} />
-                                <span className='text-xs'>
+                                <span className='text-xs hover:text-red-500 transition-colors duration-300'>
                                     <a href="https://www.credly.com/badges/2611ec02-eca4-4211-a9f6-b430219f050c/linked_in_profile" target='_blank'>
                                         Microsoft Office Specialist Word 2013
                                     </a>
@@ -201,7 +201,8 @@ const Skills = () => {
                         </div>
                         <div className="flex flex-col gap-1 justify-self-center">
                             <span className="uppercase text-red-600 text-xs">Languages</span>
-                            <span className="font-semibold text-sm">English, Nepali <br /> & Hindi/Urdu</span>
+                            <span className="font-semibold text-sm">English, नेपाली, اردو <br /> & 少しだけ日本語
+                            </span>
                         </div>
                         <div className="flex flex-col gap-1 justify-self-end ">
                             <span className="uppercase text-red-600 text-xs">Date of Birth</span>
