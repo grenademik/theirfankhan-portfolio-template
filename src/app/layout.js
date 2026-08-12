@@ -14,8 +14,9 @@ const poppins = Poppins({
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Irfan Khan - Designer/Developer",
-  description: "- Designer/Developer",
+  title: "Irfan Khan — Frontend Engineer",
+  description:
+    "Frontend engineer in Japan. React / Next.js products, dashboards, and browser tools. Portfolio: theirfankhan.com · GitHub: github.com/grenademik",
 };
 
 export default function RootLayout({ children }) {

@@ -10,6 +10,7 @@ const Skills = () => {
     const developmentTags = [
         "NextJS",
         "ReactJS",
+        "TypeScript",
         "JavaScript",
         "Tailwind CSS",
         "HTML",
@@ -18,7 +19,8 @@ const Skills = () => {
         "RESTful API",
         "AWS",
         "UI/UX Design",
-        "Framer Motion"
+        "Framer Motion",
+        "Vercel"
     ];
 
     const designerTags = [
@@ -51,7 +53,7 @@ const Skills = () => {
                             Irfan <span className="text-red-600 text-3xl">✷</span> Khan
                         </span>
                         <span className="text-5xl font-bold">
-                            Designer <br />& Developer
+                            Frontend <br />Engineer
                         </span>
                     </div>
                     <div className='flex flex-col gap-1'>
@@ -72,9 +74,9 @@ const Skills = () => {
                                 <div className='flex flex-col w-full'>
                                     <div className='flex flex-row justify-between w-full'>
                                         <span className='col-span-3 text-xs font-thin'>Himalayan Creative Solution</span>
-                                        <span className='text-xs font-light px-4'>2021-Present</span>
+                                        <span className='text-xs font-light px-4'>2021–2026</span>
                                     </div>
-                                    <span className='col-span-2 text-xs'>Frontend Engineer/Product Designer</span>
+                                    <span className='col-span-2 text-xs'>Frontend Engineer</span>
                                 </div>
                             </div>
                             <div className='flex flex-row gap-2 items-start'>
@@ -150,14 +152,14 @@ const Skills = () => {
                 </div>
                 <div className="col-span-8 justify-between flex flex-col gap-y-10 text-white">
                     <span className="text-xl font-semibold ">
-                        With years of graphic design experience, I&apos;ve transitioned into frontend development over the past year. I hold a bachelor&apos;s in Computer Science and Information Technology, blending design skills with coding expertise to create dynamic user experiences. I&apos;m eager for new challenges and projects.
+                        Frontend engineer with a design background. I ship React and Next.js products end-to-end — performance, UI, and API integration — and I&apos;m based in Japan looking for English-first or bilingual product teams.
                     </span>
                     <div className="grid grid-cols-6">
                         <div className="col-span-2 flex flex-col  font-thin">
                             <span className='text-sm font-semibold'>
                                 Development
                             </span>
-                            <span className="uppercase text-red-600 text-sm font-bold">2+ years</span>
+                            <span className="uppercase text-red-600 text-sm font-bold">~5 years</span>
                         </div>
                         <span className="col-span-4 flex flex-row flex-wrap gap-2 text-lg font-thin">
                             {developmentTags.map((tag, index) => (
@@ -196,12 +198,12 @@ const Skills = () => {
                     </div>
                     <div className="grid grid-cols-3">
                         <div className="flex flex-col gap-1">
-                            <span className="uppercase text-red-600 text-xs">Based on</span>
-                            <span className="font-semibold text-sm">Pokhara, Nepal</span>
+                            <span className="uppercase text-red-600 text-xs">Based in</span>
+                            <span className="font-semibold text-sm">Toride / Greater Tokyo, Japan</span>
                         </div>
                         <div className="flex flex-col gap-1 justify-self-center">
                             <span className="uppercase text-red-600 text-xs">Languages</span>
-                            <span className="font-semibold text-sm">English, नेपाली, اردو <br /> & 少しだけ日本語
+                            <span className="font-semibold text-sm">English (fluent)<br />Japanese N4 → N3<br />Nepali · Urdu/Hindi
                             </span>
                         </div>
                         <div className="flex flex-col gap-1 justify-self-end ">

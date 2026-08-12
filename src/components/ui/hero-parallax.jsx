@@ -58,29 +58,29 @@ export const HeroParallax = ({ products }) => {
             >
                 <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
 
-                    {firstRow.map(product => (
+                    {firstRow.map((product, index) => (
                         <ProductCard
                             product={product}
                             translate={translateX}
-                            key={product.title}
+                            key={`${product.link}-${product.title}-${index}`}
                         />
                     ))}
                 </motion.div>
                 <motion.div className="flex flex-row  mb-20 space-x-20 ">
-                    {secondRow.map(product => (
+                    {secondRow.map((product, index) => (
                         <ProductCard
                             product={product}
                             translate={translateXReverse}
-                            key={product.title}
+                            key={`${product.link}-${product.title}-${index}`}
                         />
                     ))}
                 </motion.div>
                 <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
-                    {thirdRow.map(product => (
+                    {thirdRow.map((product, index) => (
                         <ProductCard
                             product={product}
                             translate={translateX}
-                            key={product.title}
+                            key={`${product.link}-${product.title}-${index}`}
                         />
                     ))}
                 </motion.div>
@@ -93,10 +93,14 @@ export const Header = () => {
     return (
         <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
             <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-                Here are some of my <br />works
+                Selected builds — <br />live frontend work
             </h1>
             <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-                Here, you&apos;ll find a collection of my work that blends creative design with technical development. From dynamic interfaces to sleek, responsive layouts, explore projects that highlight my skills in graphic design and frontend development. Each project demonstrates my commitment to delivering visually appealing and highly functional web experiences.
+                Production Next.js apps, dashboards, and browser tools. Click through for SSR sites, race products, booking flows, and utilities shipped to real users. More on{" "}
+                <a href="https://github.com/grenademik" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-red-500">
+                    GitHub
+                </a>
+                .
             </p>
         </div>
     )
