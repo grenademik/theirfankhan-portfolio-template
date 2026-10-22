@@ -9,6 +9,7 @@ import Skills from "../components/Skills";
 import { HeroParallaxDemo } from "../components/HeroParallaxDemo";
 import { BentoGridDemo } from "../components/BewtoGridDemo";
 import { StackedProjects } from "../components/StackedProjects";
+import { Testimonials } from "../components/Testimonials";
 
 export default async function Home() {
   const testimonials = await getTestimonials();
@@ -43,6 +44,7 @@ export default async function Home() {
       <div className="mx-10 my-10">
         <BentoGridDemo />
       </div>
+      <Testimonials items={testimonials} />
     </>
   );
 }

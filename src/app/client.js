@@ -15,6 +15,22 @@ export const urlFor = (source) => builder.image(source);
 
 
 export async function getTestimonials() {
-    const testimonials = await client.fetch('*[_type == "testimonials"]')
-    return testimonials
+    try {
+        return await client.fetch(
+            `*[_type == "testimonials"]{
+                _id,
+                name,
+                title,
+                role,
+                position,
+                company,
+                quote,
+                feedback,
+                testimonial,
+                description
+            }`
+        )
+    } catch {
+        return []
+    }
 }
