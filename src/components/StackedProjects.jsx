@@ -45,15 +45,15 @@ export function StackedProjects({ limit = 4 }) {
   const items = projects.slice(0, limit);
 
   return (
-    <section className="relative mx-10 md:mx-20">
-        <div className="mb-10">
-          <p className="font-serif italic text-neutral-400">explore my work</p>
-          <h2 className="mt-2 text-4xl font-bold tracking-tight text-white md:text-6xl">
-            Selected builds
-          </h2>
-        </div>
+    <section className="relative mx-4 overflow-x-hidden sm:mx-10 md:mx-20">
+      <div className="mb-8 sm:mb-10">
+        <p className="font-serif italic text-neutral-400">explore my work</p>
+        <h2 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-6xl">
+          Selected builds
+        </h2>
+      </div>
 
-        <div className="flex flex-col gap-16 lg:gap-[12vh]">
+      <div className="flex flex-col gap-8 lg:gap-[12vh]">
         {items.map((project, index) => {
           const theme = themes[index % themes.length];
           return (
@@ -63,7 +63,7 @@ export function StackedProjects({ limit = 4 }) {
               style={{ zIndex: index + 1 }}
             >
               <div
-                className="flex"
+                className={`flex ${index > 0 ? "max-lg:!ml-0" : ""}`}
                 style={{
                   marginLeft:
                     index === 0
@@ -72,10 +72,10 @@ export function StackedProjects({ limit = 4 }) {
                 }}
               >
                 <span
-                  className={`inline-flex items-center gap-2 py-3.5 pr-14 text-xs font-bold uppercase tracking-[0.2em] sm:gap-3.5 sm:py-5 sm:pr-28 sm:text-sm ${theme.text} ${
+                  className={`inline-flex items-center gap-2 py-2.5 pl-4 pr-8 text-[11px] font-bold uppercase tracking-[0.16em] sm:gap-3.5 sm:py-5 sm:pr-28 sm:text-sm ${theme.text} ${
                     index === 0
-                      ? "pl-5 [clip-path:polygon(0_0,calc(100%-44px)_0,100%_100%,0_100%)] sm:pl-9 sm:[clip-path:polygon(0_0,calc(100%-76px)_0,100%_100%,0_100%)]"
-                      : "pl-16 [clip-path:polygon(44px_0,calc(100%-44px)_0,100%_100%,0_100%)] sm:pl-[6.75rem] sm:[clip-path:polygon(76px_0,calc(100%-76px)_0,100%_100%,0_100%)]"
+                      ? "[clip-path:polygon(0_0,calc(100%-28px)_0,100%_100%,0_100%)] sm:pl-9 sm:[clip-path:polygon(0_0,calc(100%-76px)_0,100%_100%,0_100%)]"
+                      : "[clip-path:polygon(0_0,calc(100%-28px)_0,100%_100%,0_100%)] sm:pl-[6.75rem] sm:[clip-path:polygon(76px_0,calc(100%-76px)_0,100%_100%,0_100%)]"
                   }`}
                   style={{ backgroundColor: theme.bg }}
                 >
@@ -92,36 +92,36 @@ export function StackedProjects({ limit = 4 }) {
               </div>
 
               <div
-                className={`grid grid-cols-1 gap-6 p-6 sm:p-10 lg:grid-cols-[1fr_1.1fr] lg:gap-12 lg:p-14 lg:min-h-[calc(100vh-8rem)] ${theme.text}`}
+                className={`grid grid-cols-1 gap-5 p-4 sm:gap-6 sm:p-10 lg:grid-cols-[1fr_1.1fr] lg:gap-12 lg:p-14 lg:min-h-[calc(100vh-8rem)] ${theme.text}`}
                 style={{ backgroundColor: theme.bg }}
               >
                 <div className="flex flex-col">
                   <span
-                    className={`inline-flex items-center gap-3 text-sm font-bold uppercase tracking-[0.2em] ${theme.text}`}
+                    className={`inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.16em] sm:gap-3 sm:text-sm sm:tracking-[0.2em] ${theme.text}`}
                   >
-                    <span className={`h-3 w-3 rounded-full ${theme.dot}`} />
+                    <span className={`h-2.5 w-2.5 rounded-full sm:h-3 sm:w-3 ${theme.dot}`} />
                     {project.date}
                   </span>
-                  <h3 className="mt-6 text-4xl font-semibold tracking-tight sm:text-6xl xl:text-7xl">
+                  <h3 className="mt-4 break-words text-3xl font-semibold tracking-tight sm:mt-6 sm:text-6xl xl:text-7xl">
                     {project.title}
                   </h3>
                   <p
-                    className={`mt-5 max-w-lg text-lg leading-relaxed ${theme.muted}`}
+                    className={`mt-4 max-w-lg text-base leading-relaxed sm:mt-5 sm:text-lg ${theme.muted}`}
                   >
                     {project.tagline}
                   </p>
                   <Link
                     href={`/work/${project.slug}`}
-                    className={`mt-8 inline-flex items-center gap-2 self-start border-b-2 pb-1 text-sm font-bold uppercase tracking-[0.2em] ${theme.rule} ${theme.text}`}
+                    className={`mt-6 inline-flex items-center gap-2 self-start border-b-2 pb-1 text-xs font-bold uppercase tracking-[0.16em] sm:mt-8 sm:text-sm sm:tracking-[0.2em] ${theme.rule} ${theme.text}`}
                   >
                     View project
                     <span aria-hidden>↗</span>
                   </Link>
-                  <div className="mt-auto flex flex-wrap gap-2.5 pt-12">
+                  <div className="mt-6 flex flex-wrap gap-2 pt-2 sm:mt-auto sm:gap-2.5 sm:pt-12">
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className={`px-4 py-2 text-sm font-bold uppercase tracking-wide ${theme.tag}`}
+                        className={`px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide sm:px-4 sm:py-2 sm:text-sm ${theme.tag}`}
                       >
                         {tag}
                       </span>
@@ -146,14 +146,14 @@ export function StackedProjects({ limit = 4 }) {
         })}
       </div>
 
-        <div className="relative z-20 flex justify-center bg-black py-16">
-          <Link
-            href="/work"
-            className="border-2 border-white px-8 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-white transition hover:bg-white hover:text-black"
-          >
-            See more
-          </Link>
-        </div>
+      <div className="relative z-20 flex justify-center bg-black py-10 sm:py-16">
+        <Link
+          href="/work"
+          className="border-2 border-white px-6 py-3 text-xs font-semibold uppercase tracking-[0.18em] text-white transition hover:bg-white hover:text-black sm:px-8 sm:text-sm"
+        >
+          See more
+        </Link>
+      </div>
     </section>
   );
 }

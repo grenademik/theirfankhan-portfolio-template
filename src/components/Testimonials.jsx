@@ -35,15 +35,15 @@ export function Testimonials() {
   }, [paused]);
 
   return (
-    <section className="py-16 md:py-24">
-      <div className="container mx-auto px-10 text-center md:px-20">
+    <section className="py-12 md:py-24">
+      <div className="container mx-auto px-4 text-center sm:px-10 md:px-20">
         <p className="mb-3 font-serif italic text-neutral-400">what people say</p>
-        <h2 className="text-4xl font-bold tracking-tight text-white md:text-6xl">
+        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-6xl">
           Testimonials
         </h2>
 
         <div
-          className="relative mx-auto mt-12 w-full"
+          className="relative mx-auto mt-8 w-full sm:mt-12"
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
         >
@@ -51,17 +51,17 @@ export function Testimonials() {
             {quotes.map((quote, i) => (
               <figure
                 key={quote.name}
-                className={`col-start-1 row-start-1 flex h-full flex-col items-center justify-center px-8 py-12 transition-opacity duration-300 md:px-16 md:py-16 ${
+                className={`col-start-1 row-start-1 flex h-full flex-col items-center justify-center px-5 py-8 transition-opacity duration-300 sm:px-8 sm:py-12 md:px-16 md:py-16 ${
                   i === index
                     ? "opacity-100"
                     : "pointer-events-none opacity-0"
                 }`}
               >
-                <blockquote className="mx-auto max-w-4xl text-lg font-semibold leading-relaxed text-white md:text-2xl">
+                <blockquote className="mx-auto max-w-4xl text-base font-semibold leading-relaxed text-white sm:text-lg md:text-2xl">
                   “{quote.quote}”
                 </blockquote>
-                <figcaption className="mt-10">
-                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-white">
+                <figcaption className="mt-6 sm:mt-10">
+                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white sm:text-sm sm:tracking-[0.18em]">
                     {quote.name}
                   </p>
                   {quote.url ? (
@@ -69,19 +69,19 @@ export function Testimonials() {
                       href={quote.url}
                       target="_blank"
                       rel="noreferrer"
-                      className="mt-2 inline-block text-sm text-neutral-400 underline underline-offset-4 hover:text-red-500"
+                      className="mt-2 inline-block max-w-full break-words px-1 text-xs text-neutral-400 underline underline-offset-4 hover:text-red-500 sm:text-sm"
                     >
                       {quote.role}
                     </a>
                   ) : (
-                    <p className="mt-2 text-sm text-neutral-400">{quote.role}</p>
+                    <p className="mt-2 text-xs text-neutral-400 sm:text-sm">{quote.role}</p>
                   )}
                 </figcaption>
               </figure>
             ))}
           </div>
 
-          <div className="mt-6 flex items-center justify-center gap-4">
+          <div className="mt-5 flex items-center justify-center gap-3 sm:mt-6 sm:gap-4">
             <button
               type="button"
               aria-label="Previous testimonial"
