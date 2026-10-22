@@ -12,7 +12,7 @@ export const BentoGrid = ({ className, children }) => {
   return (
     <div
       className={cn(
-        "grid md:auto-rows-[12rem] grid-cols-2 md:grid-cols-3 gap-4 just max-w-7xl mx-auto",
+        "grid auto-rows-min md:grid-cols-3 grid-cols-2 gap-4 max-w-7xl mx-auto",
         className
       )}
     >
@@ -52,38 +52,32 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-none p-4 bg-black border-white/[0.2] border justify-center flex flex-col items-start bg-center bg-origin-border ",
+        "row-span-1 flex min-h-[12rem] flex-col items-stretch justify-between rounded-none border-2 border-white bg-black p-4 group/bento transition duration-200 hover:shadow-xl",
         className
       )}
     // style={{ backgroundImage: `url(${image})` }}
     >
 
       {/* <Image src={image} width={40} height={40}/> */}
-      <div className="group-hover/bento:translate-x-2 transition duration-200">
-
+      <div className="w-full transition duration-200 group-hover/bento:translate-x-2">
         {icon}
-        <div className="font-bold text-neutral-200 mb-2 mt-2">
+        <div className="mt-2 mb-2 text-lg font-semibold text-white">
           {title}
         </div>
-        <div className="font-normal text-xs text-neutral-300">
+        <div className="text-sm font-normal leading-relaxed text-neutral-300">
           {description}
         </div>
-        {button &&
-          <div className="mt-5 relative">
-            {/* button border magic from tailwind css buttons  */}
-            {/* add rounded-md h-8 md:h-8, remove rounded-full */}
-            {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
-            {/* add handleCopy() for the copy the text */}
-            <MagicButton
-              title={copied ? "Email is Copied!" : "Copy my email address"}
-              icon={<IconClipboardCopy />}
-              position="left"
-              handleClick={handleCopy}
-              otherClasses="!bg-[#161A31]"
-            />
-          </div>
-        }
       </div>
+      {button && (
+        <div className="mt-4 w-full">
+          <MagicButton
+            title={copied ? "Email is Copied!" : "Copy my email address"}
+            icon={<IconClipboardCopy />}
+            position="left"
+            handleClick={handleCopy}
+          />
+        </div>
+      )}
     </div>
   );
 };

@@ -29,7 +29,7 @@ export function FlipWordsDemo() {
         </div>
 
         <div className="text-lg my-6 md:my-0 md:mt-6">
-          <span >Shipping React / Next.js products from Japan — live demos on this site and GitHub. </span>
+          <span >Shipping React / Next.js products from Japan.</span>
         </div>
 
         <div>

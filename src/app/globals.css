@@ -38,3 +38,18 @@ body {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
+
+@keyframes hero-portrait-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+.hero-portrait-float {
+  animation: hero-portrait-float 5.5s ease-in-out infinite;
+  transform-style: preserve-3d;
+}

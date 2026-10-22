@@ -4,7 +4,9 @@ import { HeroParallax } from "./ui/hero-parallax";
 import himalayanHome from '@/public/homepage-himalayantrailrunning.jpeg';
 import freedomHome from '@/public/homepage-freedomadventuretreks.jpeg';
 import ramBhaktaHome from '@/public/homepage-rambhaktajojiju.jpeg';
+import wholesaleDaiHome from '@/public/homepage-wholesaledai.png';
 import sailungHome from '@/public/homepage-sailungultra.jpeg';
+import raceBibHome from '@/public/homepage-racebib.png';
 
 const elevProfThumb =
   "https://himalayancreatives.com/wp-content/uploads/2024/07/Screenshot_11-7-2024_184839_elevprof.vercel.app_.jpeg";
@@ -16,39 +18,39 @@ export function HeroParallaxDemo() {
 export const products = [
   {
     title: "ElevProf",
-    link: "https://elevprof.vercel.app",
+    link: "/work/elevprof",
     type: "GPX → SVG elevation charts",
     thumbnail: elevProfThumb,
   },
   {
     title: "Himalayan Trail Running",
-    link: "https://www.himalayantrailrunning.com",
+    link: "/work/himalayan-trail-running",
     type: "Registration, payments, multi-role admin",
     thumbnail: `${himalayanHome.src}`,
   },
   {
     title: "Freedom Adventure Treks",
-    link: "https://freedomadventuretreks.com",
+    link: "/work/freedom-adventure-treks",
     type: "Next.js SSR rebuild · Lighthouse ~40 → 90+",
     thumbnail: `${freedomHome.src}`,
   },
   {
     title: "Race Bib Generator",
-    link: "https://racebib.vercel.app",
+    link: "/work/race-bib-generator",
     type: "In-browser SVG bib designer",
-    thumbnail: `${sailungHome.src}`,
+    thumbnail: `${raceBibHome.src}`,
   },
   {
     title: "Elevation Tattoo",
-    link: "https://elevationtattoo.com",
+    link: "/work/elevation-tattoo",
     type: "GPX → print-ready SVG · hours → minutes",
     thumbnail: elevProfThumb,
   },
   {
     title: "Wholesale Dai",
-    link: "https://wholesaledai.com",
+    link: "/work/wholesale-dai",
     type: "React B2B marketplace · performance-tuned",
-    thumbnail: `${ramBhaktaHome.src}`,
+    thumbnail: `${wholesaleDaiHome.src}`,
   },
   {
     title: "Race tracking UI",
@@ -70,27 +72,27 @@ export const products = [
   },
   {
     title: "ElevProf",
-    link: "https://elevprof.vercel.app",
+    link: "/work/elevprof",
     type: "Browser tool for trail runners",
     thumbnail: elevProfThumb,
   },
   {
     title: "Himalayan Trail Running",
-    link: "https://www.himalayantrailrunning.com",
+    link: "/work/himalayan-trail-running",
     type: "Replaced Forms + Sheets with a real product",
     thumbnail: `${himalayanHome.src}`,
   },
   {
     title: "Freedom Adventure Treks",
-    link: "https://freedomadventuretreks.com",
+    link: "/work/freedom-adventure-treks",
     type: "Booking + payments + dashboards",
     thumbnail: `${freedomHome.src}`,
   },
   {
     title: "Race Bib Generator",
-    link: "https://racebib.vercel.app",
+    link: "/work/race-bib-generator",
     type: "Print-ready bibs without Illustrator",
-    thumbnail: `${sailungHome.src}`,
+    thumbnail: `${raceBibHome.src}`,
   },
   {
     title: "Race tracking UI",
@@ -100,7 +102,7 @@ export const products = [
   },
   {
     title: "Elevation Tattoo",
-    link: "https://elevationtattoo.com",
+    link: "/work/elevation-tattoo",
     type: "Freelance automation product",
     thumbnail: elevProfThumb,
   },

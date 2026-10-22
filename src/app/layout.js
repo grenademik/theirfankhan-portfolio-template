@@ -1,6 +1,7 @@
 import { Poppins } from 'next/font/google';
 import "./globals.css";
-import { FloatingNavDemo } from "../components/FloatingNavDemo";
+import { SiteNav } from "../components/SiteNav";
+import { SiteFooter } from "../components/SiteFooter";
 import { GoogleAnalytics } from '@next/third-parties/google'
 
 const poppins = Poppins({
@@ -23,10 +24,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
-        
-        {/* <FloatingNavDemo/> */}
+        <SiteNav />
         {children}
-        </body>
+        <SiteFooter />
+      </body>
         <GoogleAnalytics gaId="G-K380SC2EZB" />
     </html>
   );

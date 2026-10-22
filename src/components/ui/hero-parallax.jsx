@@ -96,7 +96,11 @@ export const Header = () => {
                 Selected builds — <br />live frontend work
             </h1>
             <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-                Production Next.js apps, dashboards, and browser tools. Click through for SSR sites, race products, booking flows, and utilities shipped to real users. More on{" "}
+                Production Next.js apps, dashboards, and browser tools. Open a card for the case study — challenge, approach, and results — or browse{" "}
+                <a href="/work" className="underline underline-offset-4 hover:text-red-500">
+                    all work
+                </a>
+                . More on{" "}
                 <a href="https://github.com/grenademik" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-red-500">
                     GitHub
                 </a>
@@ -120,7 +124,8 @@ export const ProductCard = ({ product, translate }) => {
         >
             <Link
                 href={product.link}
-                target="_blank"
+                target={product.link.startsWith("http") ? "_blank" : undefined}
+                rel={product.link.startsWith("http") ? "noreferrer" : undefined}
                 className="block group-hover/product:shadow-2xl "
             >
                 <Image
